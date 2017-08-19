@@ -67,7 +67,23 @@ print(result)
 print(func_scope3(4, result))
 
 
+#
+# 任意引数リスト
+#
+def any_args(arg1, *arg2, **arg3):
+    print("arg1: ", arg1)
+    print("-" * 40)
+    for arg in arg2:
+        print(arg)
+    print("-" * 40)
+    for kw in arg3:
+        print(kw, ":", arg3[kw])
 
-
-
+print("\n===任意引数サンプル===")
+any_args("arg1_value",
+         "arg2_value1",
+         "arg2_value2",
+         arg3_1="arg3_value1",
+         arg3_2="arg3_value2",
+         arg3_3="arg3_value3")
 
