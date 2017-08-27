@@ -1,9 +1,9 @@
 #
 # Sample
 #
-class Hoge:
+class Member:
     def __init__(self, name=''):
-        """ Initialize the Hoge class.
+        """ Initialize the Member class.
         """
         self.name = name
 
@@ -27,22 +27,22 @@ class Hoge:
 # How to handle classes.
 # initialize
 # getter and setter
-hoge = Hoge('hoge taro')
+member = Member('taro nihon')
 
 # Get "name" property.
-print(hoge.get_property('name'))
+print(member.get_property('name'))
 
 # Override "name" property.
-hoge.set_property('name', 'hoge hanako')
-print(hoge.get_property('name'))
+member.set_property('name', 'hanako nihon')
+print(member.get_property('name'))
 
 # Create "country" property.
-hoge.set_property('country', 'Japan')
-print(hoge.get_property('country'))
+member.set_property('country', 'Japan')
+print(member.get_property('country'))
 
 # Notes on method arguments.
-hoge.bad_arguments(1)
-hoge.bad_arguments(2)
-hoge.bad_arguments(3)
-print(hoge.bad_values)
+member.bad_arguments(1)
+member.bad_arguments(2)
+member.bad_arguments(3)
+print(member.bad_values)
 
